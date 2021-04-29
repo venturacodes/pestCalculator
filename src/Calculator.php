@@ -3,8 +3,12 @@ namespace App;
 
 class Calculator
 {
-    public function sum($value1,$value2)
+    public function sum():int
     {
-        return $value1 + $value2;
+        $argumentsArray = array_filter(func_get_args(), fn($number) => is_numeric($number));
+        if($argumentsArray == 1) return $argumentsArray[0];
+        if(count($argumentsArray) == 0) return 0;
+
+        return array_reduce($argumentsArray, fn($total, $item ) => $total += $item, 0);
     }
 }
