@@ -9,6 +9,7 @@
       "email": "venturacodes@gmail.com"
     }
   ],
-  "require": {
+  "require-dev": {
+    "pestphp/pest": "^1.0"
   }
 }
