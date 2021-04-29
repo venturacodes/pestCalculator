@@ -1,0 +1,14 @@
+{
+  "name": "venturacodes/pest_calculator",
+  "description": "This project main objective is to test PestPHP Framework https://pestphp.com/",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "venturacodes",
+      "email": "venturacodes@gmail.com"
+    }
+  ],
+  "require": {
+  }
+}
