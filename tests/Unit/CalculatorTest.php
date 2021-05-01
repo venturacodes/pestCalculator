@@ -24,5 +24,8 @@ test("if passed number as string still works.", function(){
 });
 
 test("assert 1 times 1 is 1", function(){
-   $this->assertEquals(1, $this->calculator->multiply(1,1));
+   $this->assertEquals(1,$this->calculator->multiply(1,1));
+});
+test("assert 1 times 2 is 2", function(){
+    $this->assertEquals(2,$this->calculator->multiply(1,2));
 });
