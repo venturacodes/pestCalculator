@@ -21,4 +21,9 @@ class Calculator
         $initial = array_shift($argumentsArray);
         return array_reduce($argumentsArray, fn($total, $item ) => $total *= $item, $initial);
     }
+    public function divide(int $dividend, int $divisor):int
+    {
+        if($divisor == 0) return 0;
+        return $dividend / $divisor;
+    }
 }
