@@ -29,3 +29,17 @@ test("assert 1 times 1 is 1", function(){
 test("assert 1 times 2 is 2", function(){
     $this->assertEquals(2,$this->calculator->multiply(1,2));
 });
+
+test('assert times more than two arguments - 1 * 2 * 3 = 6 ', function(){
+   $this->assertEquals(6, $this->calculator->multiply(1,2,3));
+});
+
+test('assert number divided by 0 equals 0', function (){
+    $this->assertEquals(0,$this->calculator->divide(1,0));
+});
+
+test('assert 4 divided by 2 is 2', function(){
+    $this->assertEquals(2,
+        $this->calculator->divide(4,2)
+    );
+});
