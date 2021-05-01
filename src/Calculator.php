@@ -9,7 +9,8 @@ class Calculator
         if($argumentsArray == 1) return $argumentsArray[0];
         if(count($argumentsArray) == 0) return 0;
 
-        return array_reduce($argumentsArray, fn($total, $item ) => $total += $item, 0);
+        $initial = array_shift($argumentsArray);
+        return array_reduce($argumentsArray, fn($total, $item ) => $total += $item, $initial);
     }
     public function multiply():int
     {
@@ -17,6 +18,7 @@ class Calculator
         if($argumentsArray == 1) return $argumentsArray[0];
         if(count($argumentsArray) == 0) return 0;
 
-        return array_reduce($argumentsArray, fn($total, $item ) => $total *= $item, $argumentsArray[0]);
+        $initial = array_shift($argumentsArray);
+        return array_reduce($argumentsArray, fn($total, $item ) => $total *= $item, $initial);
     }
 }
