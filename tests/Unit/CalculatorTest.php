@@ -22,3 +22,10 @@ test("if passed word still works with other params", function(){
 test("if passed number as string still works.", function(){
     $this->assertEquals(15, $this->calculator->sum(5,5,"5"));
 });
+
+test("assert 1 times 1 is 1", function(){
+   $this->assertEquals(1,$this->calculator->multiply(1,1));
+});
+test("assert 1 times 2 is 2", function(){
+    $this->assertEquals(2,$this->calculator->multiply(1,2));
+});
