@@ -40,3 +40,13 @@ test('assert 4 divided by 2 is 2', function(){
         $this->calculator->divide(4,2)
     );
 });
+test('assert 4 minus 2 is 2', function(){
+    $this->assertEquals(2,
+        $this->calculator->subtract(4,2)
+    );
+});
+test('assert 4 minus 2 minus 2 is 0', function(){
+    $this->assertEquals(0,
+        $this->calculator->subtract(4,2,2)
+    );
+});
