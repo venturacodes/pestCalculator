@@ -37,4 +37,9 @@ class Calculator
 
         return $dividend / $divisor;
     }
+    private function isEven(float $number) : bool
+    {
+        if($number % 2 === 0) return true;
+        return false;
+    }
 }
